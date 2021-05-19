@@ -1,3 +1,3 @@
-import setuptools
+from setuptools import setup, find_packages
 
-setuptools.setup()
+setup(packages = find_packages(exclude=['tests']))
