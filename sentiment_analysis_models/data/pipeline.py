@@ -7,12 +7,13 @@ from nltk.corpus import stopwords
 from nltk.tokenize import TweetTokenizer
 
 
-def process_tweet(tweet):
+def process_tweet(tweet: str) -> list(str):
     """Process tweet function.
-    Input:
+
+    Args:
         tweet: a string containing a tweet
-    Output:
-        tweets_clean: a list of words containing the processed tweet
+    return:
+        tweets_clean (list(str)): a list of words containing the processed tweet
 
     """
     stemmer = PorterStemmer()
